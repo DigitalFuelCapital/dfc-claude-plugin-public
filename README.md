@@ -6,8 +6,8 @@ data in plain language: revenue, orders, AOV, customers, retention, marketing sp
 EcommIQ ([ecommiq.tools](https://ecommiq.tools)) is owned and operated by
 [Digital Fuel Capital](https://digitalfuelcapital.com) (DFC). This
 repository is DFC's Claude Code plugin marketplace, and the EcommIQ plugin is published and maintained
-by DFC. The plugin contains only the connector configuration; all data access, sign-in and
-permissions are handled by EcommIQ.
+by DFC. The plugin contains the connector configuration and a report-navigation skill; all data
+access, sign-in and permissions are handled by EcommIQ.
 
 ## Who can use it
 
@@ -55,6 +55,8 @@ claude mcp add --transport http ecommiq https://ecommiq.tools/api/mcp/v1/ecommiq
 ## What Claude can do
 
 - List the companies and data sources your account can access.
+- Find which EcommIQ report covers a question, where it sits in the sidebar, and which metrics
+  and filters it supports.
 - Answer questions using governed business metrics, so figures match their EcommIQ definitions.
 - Run read-only SQL queries against your company's data for ad-hoc analysis, including longer
   queries in the background.
