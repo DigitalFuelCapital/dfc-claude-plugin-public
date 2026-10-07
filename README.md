@@ -3,8 +3,11 @@
 Connect Claude to [EcommIQ](https://ecommiq.tools) and ask questions about your company's ecommerce
 data in plain language: revenue, orders, AOV, customers, retention, marketing spend and ROAS.
 
-This repository is the Claude Code plugin marketplace for the EcommIQ connector. The plugin contains
-only the connector configuration; all data access, sign-in and permissions are handled by EcommIQ.
+EcommIQ ([ecommiq.tools](https://ecommiq.tools)) is owned and operated by
+[Digital Fuel Capital](https://digitalfuelcapital.com) (DFC). This
+repository is DFC's Claude Code plugin marketplace, and the EcommIQ plugin is published and maintained
+by DFC. The plugin contains only the connector configuration; all data access, sign-in and
+permissions are handled by EcommIQ.
 
 ## Who can use it
 
@@ -31,7 +34,7 @@ On Team and Enterprise plans an organization owner may need to add the connector
 
 ```
 /plugin marketplace add DigitalFuelCapital/dfc-claude-plugin-public
-/plugin install ecommiq@ecommiq
+/plugin install ecommiq@dfc
 ```
 
 The first time Claude uses an EcommIQ tool, Claude Code opens the same browser sign-in. Run `/mcp`
@@ -40,7 +43,7 @@ to check that the `ecommiq` server is connected.
 To get updates later:
 
 ```
-/plugin marketplace update ecommiq
+/plugin marketplace update dfc
 ```
 
 Alternatively, add the connector without the plugin:
