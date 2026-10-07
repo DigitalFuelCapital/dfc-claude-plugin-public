@@ -1,7 +1,7 @@
 {
   "name": "ecommiq",
   "displayName": "EcommIQ",
-  "description": "EcommIQ data connector - ask questions about your company's ecommerce data from Claude",
+  "description": "EcommIQ data connector by Digital Fuel Capital - ask questions about your company's ecommerce data from Claude",
   "version": "1.0.0",
   "author": {
     "name": "Digital Fuel Capital"
