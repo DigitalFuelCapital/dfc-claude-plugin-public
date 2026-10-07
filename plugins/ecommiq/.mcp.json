@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ecommiq": {
+      "type": "http",
+      "url": "https://ecommiq.tools/api/mcp/v1/ecommiq"
+    }
+  }
+}

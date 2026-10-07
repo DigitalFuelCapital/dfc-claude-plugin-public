@@ -1,0 +1,12 @@
+{
+  "name": "ecommiq",
+  "displayName": "EcommIQ",
+  "description": "EcommIQ data connector - ask questions about your company's ecommerce data from Claude",
+  "version": "1.0.0",
+  "author": {
+    "name": "Digital Fuel Capital"
+  },
+  "homepage": "https://ecommiq.tools",
+  "repository": "https://github.com/DigitalFuelCapital/dfc-claude-plugin-public",
+  "license": "MIT"
+}
