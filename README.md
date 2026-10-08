@@ -18,9 +18,10 @@ contact to enable AI access for your company.
 
 ## Install in claude.ai or Claude Desktop
 
-1. Open **Customize → Plugins**, choose **Add → Add marketplace**, and enter:
+1. Open **Customize → Plugins**, choose **Add → Add marketplace**, and enter the GitHub
+   URL:
    ```
-   DigitalFuelCapital/dfc-claude-plugin-public
+   https://github.com/DigitalFuelCapital/dfc-claude-plugin-public
    ```
 2. Open **Discover**, select **EcommIQ** and click **Install**.
 3. Open **Customize → Plugins → EcommIQ → Connectors** and connect `ecommiq`. A browser window opens
@@ -35,7 +36,8 @@ Plugins added here also appear in the Claude Desktop Code tab and in Claude Code
 An organization owner can make the plugin available to every member:
 
 1. Open **Organization settings → Plugins & skills**, choose **Add → Add marketplace**, and enter
-   `DigitalFuelCapital/dfc-claude-plugin-public`.
+   `https://github.com/DigitalFuelCapital/dfc-claude-plugin-public`. (Use **Add marketplace**, not
+   **Sync from GitHub**: organization sync only accepts private or internal repositories.)
 2. On the EcommIQ plugin's menu, choose **Default access** and pick **Available to install**,
    **Installed by default** or **Required**.
 
