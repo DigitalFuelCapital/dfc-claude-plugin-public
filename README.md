@@ -18,6 +18,9 @@ contact to enable AI access for your company.
 
 ## Install in claude.ai or Claude Desktop
 
+Each person adds the DFC marketplace to their own account. Right now this is the only way to
+install the plugin in claude.ai and Claude Desktop.
+
 1. Open **Customize → Plugins**, choose **Add → Add marketplace**, and enter the GitHub
    URL:
    ```
@@ -33,35 +36,14 @@ Plugins added here also appear in the Claude Desktop Code tab and in Claude Code
 
 ## Install for your whole organization (Team and Enterprise)
 
-An organization owner can make the plugin available to every member:
-
-1. Open **Organization settings → Plugins & skills**, choose **Add → Add marketplace**, and enter
-   `https://github.com/DigitalFuelCapital/dfc-claude-plugin-public`. (Use **Add marketplace**, not
-   **Sync from GitHub**: organization sync only accepts private or internal repositories.)
-2. On the EcommIQ plugin's menu, choose **Default access** and pick **Available to install**,
-   **Installed by default** or **Required**.
-
-Members still sign in to EcommIQ themselves the first time they use it.
-
-Plugins turned on here also reach Claude Code. To force-install the plugin in Claude Code through
-policy instead, add this under **Organization settings → Claude Code → Managed settings** (Owner role
-required):
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "dfc": {
-      "source": { "source": "github", "repo": "DigitalFuelCapital/dfc-claude-plugin-public" },
-      "autoUpdate": true
-    }
-  },
-  "enabledPlugins": {
-    "ecommiq@dfc": true
-  }
-}
-```
+**In progress.** Organization-wide install is not available yet. **Organization settings → Plugins &
+skills** can only sync private or internal GitHub repositories, and this marketplace is public. Until
+this is supported, each member should install the plugin from their own account as described above.
 
 ## Install in Claude Code
+
+If you added the marketplace in claude.ai or Claude Desktop, the plugin already syncs to Claude Code.
+To install it in Claude Code only:
 
 ```
 /plugin marketplace add DigitalFuelCapital/dfc-claude-plugin-public
