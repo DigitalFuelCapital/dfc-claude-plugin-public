@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dfc",
   "metadata": {
-    "description": "Claude plugins from Digital Fuel Capital"
+    "description": "EcommIQ plugins from Digital Fuel Capital"
   },
   "owner": {
     "name": "Digital Fuel Capital"
@@ -11,8 +11,8 @@
     {
       "name": "ecommiq",
       "source": "./plugins/ecommiq",
-      "description": "EcommIQ data connector by Digital Fuel Capital - find your way around your EcommIQ reports and ask questions about your company's ecommerce data from Claude",
-      "version": "1.1.1",
+      "description": "EcommIQ data connector by Digital Fuel Capital - find your way around your EcommIQ reports and ask questions about your company's ecommerce data",
+      "version": "1.2.0",
       "homepage": "https://ecommiq.tools",
       "author": {
         "name": "Digital Fuel Capital"
