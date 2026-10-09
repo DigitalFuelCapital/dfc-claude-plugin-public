@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ecommiq",
+  "version": "1.2.0",
+  "description": "EcommIQ data connector by Digital Fuel Capital - find your way around your EcommIQ reports and ask questions about your company's ecommerce data",
+  "author": {
+    "name": "Digital Fuel Capital"
+  },
+  "homepage": "https://ecommiq.tools",
+  "repository": "https://github.com/DigitalFuelCapital/dfc-claude-plugin-public",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "EcommIQ",
+        "shortDescription": "Ecommerce data and reports",
+        "longDescription": "Find EcommIQ reports and analyze your company's ecommerce data. Business data access is read-only; issue reports can be sent to the EcommIQ team with your approval.",
+        "developerName": "Digital Fuel Capital",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://ecommiq.tools",
+        "privacyPolicyURL": "https://ecommiq.tools/policy/privacy",
+        "defaultPrompt": [
+          "Find the EcommIQ report that answers my question.",
+          "Analyze my company's ecommerce performance."
+        ]
+      }
+    }
+  }
+}
