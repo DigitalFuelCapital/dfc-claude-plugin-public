@@ -60,7 +60,7 @@ what it offers. Call them "EcommIQ reports"; they are separate from custom dashb
 
 > **User:** Where can I see customer retention?
 >
-> **Claude:** It's in the **Customers > Retention > Cohort Retention** report
+> **Assistant:** It's in the **Customers > Retention > Cohort Retention** report
 > ([open EcommIQ](https://ecommiq.tools/ecommiq/...)). It shows the share of each monthly
 > first-order cohort that orders again, by months since first purchase. You can filter by
 > acquisition channel and first-order product category. Want me to pull the actual
