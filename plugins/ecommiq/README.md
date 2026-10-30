@@ -27,13 +27,17 @@ The plugin has no hooks, commands, local scripts or package installs.
 - Answer questions using governed business metrics, so figures match their EcommIQ definitions.
 - Run read-only SQL queries against your company's data, including longer queries in the
   background.
+- Show product images in an inline gallery. The gallery appears in Claude on the web and desktop;
+  Claude Code shows a text summary instead.
 - Report a problem to the EcommIQ team.
 
 The plugin is read-only for your business data: it cannot change or delete it.
 
 ## Data handling
 
-The plugin talks only to `ecommiq.tools`. Report descriptions and query results are returned to
+The plugin talks only to `ecommiq.tools`, with one exception: product image galleries load public
+product photos from Shopify's image CDN (`cdn.shopify.com`) directly in your Claude client, and
+those images are not sent to Claude. Report descriptions and query results are returned to
 Claude as part of your conversation. EcommIQ records each tool request (user, tool, parameters,
 result summary and timing) for security, auditing and support, and may cache query results for up
 to 24 hours. Issue reports you ask Claude to file are sent to the EcommIQ team. Access is checked on
