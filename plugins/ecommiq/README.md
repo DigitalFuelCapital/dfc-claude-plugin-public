@@ -39,16 +39,20 @@ flow. A direct MCP connection does not automatically install the bundled skill.
 - Answer questions using governed business metrics, so figures match their EcommIQ definitions.
 - Run read-only SQL queries against your company's data, including longer queries in the
   background.
+- Show product images in an inline gallery. The gallery appears in Claude on the web and desktop;
+  Claude Code and other clients, including Codex, may show a text summary instead.
 - Report a problem to the EcommIQ team.
 
 The plugin is read-only for your business data: it cannot change or delete it.
 
 ## Data handling
 
-The plugin talks only to `ecommiq.tools`. Report descriptions and query results are returned to
-your AI client as part of your conversation. EcommIQ records each tool request (user, tool, parameters,
-result summary and timing) for security, auditing and support, and may cache query results for up
-to 24 hours. Issue reports you ask the assistant to file are sent to the EcommIQ team. Access is checked on
+The plugin talks only to `ecommiq.tools`, with one exception: in clients that show the product
+image gallery, public product photos load from Shopify's image CDN (`cdn.shopify.com`) directly in
+your client, and those images are not sent to the AI model. Report descriptions and query results
+are returned to your AI client as part of your conversation. EcommIQ records each tool request
+(user, tool, parameters, result summary and timing) for security, auditing and support, and may
+cache query results for up to 24 hours. Issue reports you ask the assistant to file are sent to the EcommIQ team. Access is checked on
 every request and stops immediately if your account or your company's AI access is turned off. See
 the [EcommIQ privacy policy](https://ecommiq.tools/policy/privacy).
 
