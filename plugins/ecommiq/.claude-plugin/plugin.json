@@ -2,11 +2,12 @@
   "name": "ecommiq",
   "displayName": "EcommIQ",
   "description": "EcommIQ data connector by Digital Fuel Capital - find your way around your EcommIQ reports and ask questions about your company's ecommerce data",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": {
     "name": "Digital Fuel Capital"
   },
   "homepage": "https://ecommiq.tools",
+  "privacyPolicyUrl": "https://ecommiq.tools/policy/privacy",
   "repository": "https://github.com/DigitalFuelCapital/dfc-claude-plugin-public",
   "license": "MIT"
 }
